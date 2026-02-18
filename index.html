@@ -17,17 +17,32 @@
 
     <div id="particles-js"></div>
 
-    <nav>
-        <div class="container">
-            <div class="logo"><a href="#home"><img src="./Icons/MyLogoWhite.png" alt="Logo"></a></div>
-            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-            <ul id="nav-menu">
-                <li><a href="#home" onclick="closeMenu()">Home</a></li>
-                <li><a href="#about" onclick="closeMenu()">About</a></li>
-                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-                <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
-                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./Icons/MyLogoWhite.png" alt="Logo">
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <div class="active-indicator"></div>
+                <li><a href="#home" class="nav-link" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" class="nav-link" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" class="nav-link" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#resume" class="nav-link" onclick="closeMenu()">Resume</a></li>
+                <li >
+                    <a href="#contact" class="nav-link" onclick="closeMenu()">
+                        <span>Contact</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>

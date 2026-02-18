@@ -135,3 +135,92 @@ document.addEventListener('mousemove', (e) => {
     clearTimeout(trailTimeout);
     trailTimeout = setTimeout(() => createTrail(e), 50);
 });
+
+
+// ============================================
+// THE LEGENDARY ACTIVE STATE SYSTEM
+// ============================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const activeIndicator = document.querySelector('.active-indicator');
+    const navbar = document.querySelector('.navbar');
+    
+    // Update Active State & Move Indicator
+    function updateActiveLink() {
+        let current = 'home';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - 150)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach((link, index) => {
+            link.classList.remove('active');
+            const href = link.getAttribute('href').substring(1);
+            
+            if (href === current) {
+                link.classList.add('active');
+                
+                // Move the Active Indicator
+                if (window.innerWidth > 968) {
+                    const linkRect = link.getBoundingClientRect();
+                    const menuRect = link.closest('.nav-menu').getBoundingClientRect();
+                    
+                    activeIndicator.style.width = `${linkRect.width}px`;
+                    activeIndicator.style.left = `${linkRect.left - menuRect.left}px`;
+                    activeIndicator.classList.add('show');
+                }
+            }
+        });
+    }
+    
+    // Scroll Effect
+    function handleScroll() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        updateActiveLink();
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+    
+    // Initial Load
+    updateActiveLink();
+    
+    // Click Handler
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Smooth scroll
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    });
+});
+
+// Mobile Menu Toggle
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    const btn = document.querySelector('.mobile-menu-btn');
+    menu.classList.toggle('active');
+    btn.classList.toggle('active');
+}
+
+function closeMenu() {
+    const menu = document.getElementById('nav-menu');
+    const btn = document.querySelector('.mobile-menu-btn');
+    menu.classList.remove('active');
+    btn.classList.remove('active');
+}
