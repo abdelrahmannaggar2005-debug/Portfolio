@@ -343,7 +343,6 @@ body {
 /* Active State - الخلفية السحرية */
 .nav-menu li a.active {
     color: #ffffff;
-    padding: 10px 24px;
     text-shadow: 
         0 0 20px rgba(67, 15, 187, 0.8),
         0 0 40px rgba(59, 130, 246, 0.6),
@@ -364,7 +363,7 @@ body {
     background: linear-gradient(90deg,#3156fb, #2e7bff, #136eff);
     border-radius: 3px;
     box-shadow: 
-        0 0 15px rgba(139, 92, 246, 0.8),
+        0 0 15px rgba(78, 69, 253, 0.8),
         0 0 30px rgba(59, 130, 246, 0.6);
     animation: glowLine 1.5s ease-in-out infinite;
 }
@@ -394,7 +393,7 @@ body {
     position: relative;
     overflow: hidden;
     box-shadow: 
-        0 4px 20px rgba(139, 92, 246, 0.4),
+        0 4px 20px rgba(23, 15, 141, 0.4),
         0 8px 40px rgba(59, 130, 246, 0.3);
     animation: gradientShift 3s ease infinite;
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -440,9 +439,9 @@ body {
 .nav-cta a:hover {
     transform: translateY(-4px) scale(1.08);
     box-shadow: 
-        0 8px 35px rgba(139, 92, 246, 0.6),
+        0 8px 35px rgba(57, 63, 232, 0.6),
         0 12px 50px rgba(59, 130, 246, 0.5),
-        0 0 0 5px rgba(139, 92, 246, 0.2);
+        0 0 0 5px rgba(67, 58, 235, 0.2);
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
@@ -453,14 +452,14 @@ body {
 @keyframes ctaActive {
     0%, 100% {
         box-shadow: 
-            0 4px 20px rgba(139, 92, 246, 0.4),
+            0 4px 20px rgba(46, 64, 205, 0.4),
             0 8px 40px rgba(59, 130, 246, 0.3);
     }
     50% {
         box-shadow: 
-            0 8px 35px rgba(139, 92, 246, 0.7),
-            0 12px 60px rgba(59, 130, 246, 0.6),
-            0 0 0 8px rgba(139, 92, 246, 0.3);
+            0 8px 35px rgba(34, 23, 186, 0.7),
+            0 12px 60px rgba(25, 92, 202, 0.6),
+            0 0 0 8px rgba(92, 115, 246, 0.3);
     }
 }
 
@@ -471,7 +470,7 @@ body {
 .mobile-menu-btn {
     display: none;
     color: #ffffff;
-    background: rgba(51, 73, 214, 0.15);
+    background: rgba(23, 45, 188, 0.15);
     border: 2px solid rgba(22, 60, 172, 0.4);
     border-radius: 12px;
     padding: 8px;
@@ -485,26 +484,35 @@ body {
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-menu-btn p {
+    width:100%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
 }
 
 .mobile-menu-btn span {
     width: 26px;
     height: 3px;
-    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    background: linear-gradient(90deg, #5c69f6, #3b82f6);
     border-radius: 3px;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.6);
+    box-shadow: 0 0 10px rgba(68, 88, 237, 0.6);
 }
 
 .mobile-menu-btn:hover {
-    background: rgba(139, 92, 246, 0.25);
-    border-color: rgba(139, 92, 246, 0.6);
+    background: rgba(23, 26, 176, 0.25);
+    border-color: rgba(42, 39, 215, 0.6);
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 0 20px rgba(41, 47, 211, 0.4);
 }
 
 .mobile-menu-btn:hover span {
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.8);
+    box-shadow: 0 0 15px rgba(24, 24, 214, 0.8);
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
@@ -560,7 +568,7 @@ body {
         top: 90px;
         left: 20px;
         right: 20px;
-        background: rgba(10, 14, 30, 0.98);
+        background: rgba(10, 14, 30, 0.879);
         backdrop-filter: blur(25px);
         border:  #3b83f6a4 2px solid;
         border-radius: 20px;
