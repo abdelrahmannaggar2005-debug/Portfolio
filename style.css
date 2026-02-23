@@ -674,7 +674,7 @@ body {
 .hero-content {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -1089,12 +1089,12 @@ body {
 /* Frame */
 .image-frame {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     padding: 8px;
-    background: linear-gradient(135deg, #3b82f6, #60a5fa, #3b82f6);
-    background-size: 200% 200%;
+    background: linear-gradient(135deg, #256bdd3f, #60a5fa39, #3b83f604);
+    background-size: 160% 160%;
     animation: rotateGradient 4s linear infinite;
     z-index: 1;
 }
@@ -1110,10 +1110,11 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #0a0e1a;
+    border: 1px solid #0b162e39;
     animation: float 6s ease-in-out infinite;
     user-select: none;
     pointer-events: none;
+    box-shadow: #ffffff 0px 0px 10px, #3b82f6 0px 0px 20px;
 }
 
 @keyframes float {
@@ -1151,12 +1152,12 @@ body {
 
 .card-2 {
     top: 100px;
-    right: -60px;
+    right: 0px;
     animation-delay: 1.3s;
 }
 
 .card-3 {
-    bottom: 80px;
+    bottom:100px;
     left: -40px;
     animation-delay: 2.6s;
 }
