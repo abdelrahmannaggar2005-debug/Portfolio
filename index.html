@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" class="MyLogo" href="./Icons/MyMainLogo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Abdelrahman | Portfolio</title>
+   
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./Icons/MyLogoWhite.png" alt="Logo">
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMenu()"><svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                                                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                            </svg>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <div class="active-indicator"></div>
+                <li><a href="#home" class="nav-link" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" class="nav-link" onclick="closeMenu()">About</a></li>
+                <li><a href="#experience" class="nav-link" onclick="closeMenu()">Experience</a></li>
+                <li><a href="#skills" class="nav-link" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#projects" class="nav-link" onclick="closeMenu()">Projects</a></li>
+                
+                <li >
+                    <a href="#contact" class="nav-link" onclick="closeMenu()">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Animated Background -->
+                
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Side - Text Content -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for Opportunities
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-name">Abdelrahman</span>
+                    </h1>
+                 
+                  <p class="hero-description">
+    Designing and building <span class="highlight">data-driven solutions</span> that bridge analytics and technology. From enterprise-grade Power BI platforms and interactive dashboards to Flutter applications powered by Firebase and Flask, I focus on creating tools that transform information into actionable outcomes.
+</p>
+                    
+                   <div class="hero-stats">
+    <div class="stat-item">
+        <span class="stat-value" data-target="15">14+</span>
+        <span class="stat-label">Projects Built</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+        <span class="stat-value" data-target="4">3</span>
+        <span class="stat-label">Domains Explored</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+        <span class="stat-value" data-target="3">2</span>
+        <span class="stat-label">Core Specializations</span>
+    </div>
+</div>
+                    
+                    <div class="hero-buttons">
+                        <a class="hero-btn btn-primary" href="#contact">
+                            <span class="btn-content">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Get In Touch
+                            </span>
+                            <div class="btn-shine"></div>
+                        </a>
+                        
+                        <a class="hero-btn btn-secondary" href="Resume.pdf" download>
+                            <span class="btn-content">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Download CV
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <span class="social-label">Connect with me</span>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/abdelrahman-ahmed-852b69290" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span class="social-tooltip">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/abdelrahmannaggar2005-debug" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                                <span class="social-tooltip">GitHub</span>
+                            </a>
+                            <a href="mailto:abdelrahman.naggar2005@gmail.com" class="social-link" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="social-tooltip">Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Image -->
+                <div class="hero-image-section">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <div class="image-frame">
+                            <img src="./Images/mainpic.png" alt="Abdelrahman - Data Analyst" class="profile-img">
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="floating-card card-1">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 17V7M15 17V13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Analytics</span>
+                        </div>
+                        
+                        <div class="floating-card card-2">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 3V16C3 17.1046 3.89543 18 5 18H21M7 14L12 9L16 13L21 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Python</span>
+                        </div>
+                        
+                        <div class="floating-card card-3">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+    </section>
+
+    <section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+            <div class="about-content">
+
+                <h3>Building Solutions Through Data & Technology</h3>
+
+                <p>
+                    I specialize in designing data-driven solutions that combine
+                    analytics, business intelligence, and application development.
+                    My work focuses on transforming raw data into actionable insights
+                    through interactive dashboards, reporting systems, and decision-support tools.
+                </p>
+
+                <p>
+                    Beyond analytics, I develop cross-platform applications using
+                    Flutter, Firebase, and Flask, creating solutions that bridge
+                    data, technology, and user experience. I enjoy solving real-world
+                    challenges by turning ideas into practical products that deliver measurable value.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Abdelrahman Ahmed" class="about-img">
+            </div>
+        </div>
+
+        <div class="about-highlights">
+
+            <div class="highlight-item">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+                <h4>Business Intelligence</h4>
+                <p>Designing dashboards and analytical solutions that support better business decisions.</p>
+            </div>
+
+            <div class="highlight-item">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </span>
+                <h4>Application Development</h4>
+                <p>Building Flutter applications integrated with Firebase and Flask services.</p>
+            </div>
+
+            <div class="highlight-item">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </span>
+                <h4>Problem Solving</h4>
+                <p>Transforming complex challenges into practical, data-driven solutions.</p>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+
+    <section id="experience">
+        <div class="experience-background">
+            <div class="grid-pattern"></div>
+            <div class="floating-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Professional Journey</span>
+                <h2 class="section-title">Relevant Experience</h2>
+                <p class="section-subtitle">Transforming data into actionable insights that drive business growth</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <!-- Timeline Line -->
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+              
+
+<div class="experience-card" data-aos="fade-up">
+    <div class="card-connector"></div>
+
+    <div class="card-header">
+        <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 3V5M15 3V5M3 9H21M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="card-meta">
+            <h3 class="card-title">Power BI Developer — Advanced Business Intelligence</h3>
+            <p class="card-subtitle">SuperStore Advanced Analytics Platform</p>
+
+            <div class="card-period">
+                <span class="period-badge">2025 – Present</span>
+                <span class="period-type">Self-Directed | Full Ownership</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+
+        <!-- Executive Version -->
+        <div class="version-tab active" data-version="executive">
+
+            <div class="impact-highlight">
+
+                <div class="impact-stat">
+                    <span class="stat-value">4</span>
+                    <span class="stat-label">What-If Drivers</span>
+                </div>
+
+                <div class="impact-stat">
+                    <span class="stat-value">536%</span>
+                    <span class="stat-label">Profit Simulation Growth</span>
+                </div>
+
+                <div class="impact-stat">
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Interactive Dashboards</span>
+                </div>
+
+            </div>
+
+            <h4 class="subsection-title">Key Achievements</h4>
+
+            <ul class="achievement-list">
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Built a complete enterprise-grade Power BI analytics platform</strong>
+                        featuring Sales Analysis, Product Intelligence, and advanced What-If simulation
+                        capabilities for strategic decision making.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Designed a scalable Star Schema data model</strong>
+                        with dedicated Calendar dimensions and optimized relationships to support
+                        advanced business reporting.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Developed sophisticated DAX measures</strong>
+                        including YoY Growth, Sales Gap Analysis, Profit Contribution %,
+                        Best/Worst Product identification, and dynamic KPI calculations.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Created a real-time What-If simulation engine</strong>
+                        allowing executives to evaluate pricing, discount, quantity, and cost scenarios
+                        with instant profitability impact analysis.
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Technical Version -->
+        <div class="version-tab" data-version="technical">
+
+            <h4 class="subsection-title">Technical Implementation</h4>
+
+            <ul class="achievement-list">
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Data Preparation & Transformation:</strong>
+                        Performed extensive data cleaning, missing value handling,
+                        hierarchy creation, and business rule standardization using Power Query.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Data Modeling:</strong>
+                        Implemented a Star Schema architecture with fact and dimension tables,
+                        including a dedicated Calendar table supporting advanced time intelligence calculations.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Advanced DAX Development:</strong>
+                        Built production-grade measures using VAR, SWITCH, SELECTEDVALUE,
+                        and context transition techniques for dynamic analytical calculations.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>What-If Simulation Framework:</strong>
+                        Developed interactive scenario analysis capabilities covering Price Effect,
+                        Discount Effect, Quantity Effect, and Cost Effect with dynamic waterfall decomposition.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Interactive Reporting:</strong>
+                        Designed executive-ready dashboards featuring KPI cards,
+                        Tree Maps, Waterfall Charts, Product Intelligence dashboards,
+                        and dynamic filtering experiences.
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="tech-stack">
+
+                <h5>Technology Stack</h5>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">Power Query</span>
+                    <span class="tech-tag">Data Modeling</span>
+                    <span class="tech-tag">Star Schema</span>
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">Business Intelligence</span>
+                    <span class="tech-tag">What-If Analysis</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Storytelling Version -->
+        <div class="version-tab" data-version="storytelling">
+
+            <div class="story-section">
+                <h4 class="subsection-title">The Challenge</h4>
+
+                <p class="story-text">
+                    Traditional business dashboards often explain what happened,
+                    but they rarely help decision-makers understand what could happen next.
+                    The challenge was to transform historical SuperStore data into an
+                    interactive decision-support system capable of evaluating future business scenarios.
+                </p>
+            </div>
+
+            <div class="story-section">
+
+                <h4 class="subsection-title">My Approach</h4>
+
+                <ol class="story-list">
+
+                    <li>
+                        <strong>Data Foundation:</strong>
+                        Cleaned and transformed raw SuperStore data,
+                        established business hierarchies, and built a scalable analytical model.
+                    </li>
+
+                    <li>
+                        <strong>Analytics Development:</strong>
+                        Created advanced KPIs, YoY metrics, contribution analysis,
+                        and profitability calculations using DAX best practices.
+                    </li>
+
+                    <li>
+                        <strong>Decision Intelligence:</strong>
+                        Implemented a real-time What-If simulation engine enabling users
+                        to experiment with pricing, discounts, quantities, and costs while
+                        instantly evaluating business impact.
+                    </li>
+
+                </ol>
+
+            </div>
+
+            <div class="story-section">
+
+                <h4 class="subsection-title">The Impact</h4>
+
+                <p class="story-text">
+                    The resulting platform evolved beyond a traditional dashboard into a
+                    complete business intelligence ecosystem. Stakeholders can explore growth opportunities,
+                    identify profit drivers, evaluate risk, and simulate future business scenarios
+                    before implementing strategic decisions.
+                </p>
+
+            </div>
+
+            <div class="story-section">
+
+                <h4 class="subsection-title">What I Learned</h4>
+
+                <ul class="achievement-list">
+
+                    <li>
+                        <span class="bullet-icon">▸</span>
+                        <div class="achievement-content">
+                            Business value comes from enabling decisions, not simply displaying metrics.
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="bullet-icon">▸</span>
+                        <div class="achievement-content">
+                            Strong data modeling is the foundation of scalable and maintainable analytics solutions.
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="bullet-icon">▸</span>
+                        <div class="achievement-content">
+                            Advanced DAX and What-If analysis can transform dashboards into interactive business simulation tools.
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Version Switcher -->
+        <div class="version-switcher">
+
+            <button class="version-btn active" onclick="switchVersion(this, 'executive')">
+                <span>Executive</span>
+            </button>
+
+            <button class="version-btn" onclick="switchVersion(this, 'technical')">
+                <span>Technical</span>
+            </button>
+
+            <button class="version-btn" onclick="switchVersion(this, 'storytelling')">
+                <span>Story</span>
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Skills Summary Card -->
+
+<div class="skills-summary-card" data-aos="fade-up" data-aos-delay="200">
+
+    <h4 class="card-title">Enterprise Business Intelligence Capabilities Demonstrated</h4>
+
+    <p class="skills-description">
+        This project demonstrates end-to-end Business Intelligence expertise,
+        from data cleaning and transformation to advanced analytics,
+        data modeling, DAX development, and executive storytelling.
+        Key strengths include Star Schema design, KPI engineering,
+        profitability analysis, time intelligence, What-If simulation,
+        and strategic decision-support development using Power BI.
+    </p>
+
+    <div class="skill-categories">
+
+        <div class="skill-category">
+
+            <h5>Analytics & Business Intelligence</h5>
+
+            <div class="skill-pills">
+                <span class="pill">What-If Analysis</span>
+                <span class="pill">Profitability Analysis</span>
+                <span class="pill">Sales Performance Analysis</span>
+                <span class="pill">YOY Growth Analysis</span>
+                <span class="pill">KPI Development</span>
+            </div>
+
+        </div>
+
+        <div class="skill-category">
+
+            <h5>Technical Stack</h5>
+
+            <div class="skill-pills">
+                <span class="pill">Power BI</span>
+                <span class="pill">DAX</span>
+                <span class="pill">Power Query</span>
+                <span class="pill">Data Modeling</span>
+                <span class="pill">Star Schema</span>
+            </div>
+
+        </div>
+
+        <div class="skill-category">
+
+            <h5>Business Impact</h5>
+
+            <div class="skill-pills">
+                <span class="pill">Decision Support</span>
+                <span class="pill">Revenue Optimization</span>
+                <span class="pill">Pricing Strategy</span>
+                <span class="pill">Risk Assessment</span>
+                <span class="pill">Executive Reporting</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="experience-card" data-aos="fade-up">
+    <div class="card-connector"></div>
+
+    <div class="card-header">
+        <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12H3L12 3L21 12H19M5 12V19C5 19.5523 5.44772 20 6 20H9M19 12V19C19 19.5523 18.5523 20 18 20H15M9 20V14C9 13.4477 9.44772 13 10 13H14C14.5523 13 15 13.4477 15 14V20M9 20H15"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+
+        <div class="card-meta">
+            <h3 class="card-title">Flutter Developer — Mobile App & Backend Integration</h3>
+            <p class="card-subtitle">GaitAI — AI-Powered Gait Analysis Application</p>
+
+            <div class="card-period">
+                <span class="period-badge">2025 – Present</span>
+                <span class="period-type">Team Project | App & Backend Lead</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body">
+
+        <!-- Executive Version -->
+        <div class="version-tab active" data-version="executive">
+
+            <div class="impact-highlight">
+
+                <div class="impact-stat">
+                    <span class="stat-value">2</span>
+                    <span class="stat-label">Platforms (Android & iOS)</span>
+                </div>
+
+                <div class="impact-stat">
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Firebase Services Integrated</span>
+                </div>
+
+                <div class="impact-stat">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Real-time Data Sync</span>
+                </div>
+
+            </div>
+
+            <h4 class="subsection-title">Key Achievements</h4>
+
+            <ul class="achievement-list">
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Built the full mobile application using Flutter</strong>
+                        delivering a single cross-platform codebase for Android and iOS,
+                        responsible for the complete app and backend layer of GaitAI.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Implemented secure user authentication</strong>
+                        using Firebase Auth, supporting account creation, login,
+                        and session management across the application.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Designed a real-time data pipeline</strong>
+                        connecting the Flutter app to Firestore and Firebase Storage,
+                        enabling instant sync of gait analysis results and media files.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Developed a Flask-based REST API backend</strong>
+                        in Python to bridge the mobile application with the AI analysis
+                        engine, handling requests, processing, and response delivery.
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Technical Version -->
+        <div class="version-tab" data-version="technical">
+
+            <h4 class="subsection-title">Technical Implementation</h4>
+
+            <ul class="achievement-list">
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Mobile App Development:</strong>
+                        Built the application UI and logic using Flutter and Dart,
+                        following a clean, modular architecture for maintainability and scalability.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Authentication & Security:</strong>
+                        Integrated Firebase Auth for user sign-up/login flows,
+                        with session persistence and secure access to user-specific data.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Cloud Data Management:</strong>
+                        Structured Firestore collections for storing user profiles and
+                        gait analysis records, and used Firebase Storage to manage
+                        uploaded videos/images securely.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>Backend API Development:</strong>
+                        Built REST API endpoints with Flask (Python) to handle
+                        data exchange between the Flutter app and the AI processing layer,
+                        including request validation and response formatting.
+                    </div>
+                </li>
+
+                <li>
+                    <span class="bullet-icon">▸</span>
+                    <div class="achievement-content">
+                        <strong>App-to-Backend Integration:</strong>
+                        Connected the Flutter client to the Flask API and Firebase services
+                        simultaneously, ensuring consistent data flow across the full stack.
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="tech-stack">
+
+                <h5>Technology Stack</h5>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">Firebase Auth</span>
+                    <span class="tech-tag">Firebase Storage</span>
+                    <span class="tech-tag">Firestore</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Storytelling Version -->
+        <div class="version-tab" data-version="storytelling">
+
+            <div class="story-section">
+                <h4 class="subsection-title">The Challenge</h4>
+
+                <p class="story-text">
+                    GaitAI needed a reliable mobile front-end that could capture user data,
+                    sync it instantly with the cloud, and communicate seamlessly with
+                    an AI-driven backend for gait analysis — all while keeping the
+                    experience smooth and consistent across Android and iOS.
+                </p>
+            </div>
+
+            <div class="story-section">
+
+                <h4 class="subsection-title">My Approach</h4>
+
+                <ol class="story-list">
+
+                    <li>
+                        <strong>App Foundation:</strong>
+                        Built the Flutter application from the ground up, structuring
+                        screens and state management to support the project's analysis workflow.
+                    </li>
+
+                    <li>
+                        <strong>Cloud Integration:</strong>
+                        Connected the app to Firebase Auth, Firestore, and Firebase Storage
+                        to handle authentication, data persistence, and media uploads in real time.
+                    </li>
+
+                    <li>
+                        <strong>Backend Bridge:</strong>
+                        Developed a Flask REST API in Python to link the mobile app with
+                        the AI processing pipeline, ensuring smooth, reliable data exchange.
+                    </li>
+
+                </ol>
+
+            </div>
+
+            <div class="story-section">
+
+                <h4 class="subsection-title">The Impact</h4>
+
+                <p class="story-text">
+                    The result was a fully functional cross-platform application with a
+                    stable backend bridge — giving the GaitAI system a reliable way to
+                    collect, store, and exchange data between users and the AI analysis engine.
+                </p>
+
+            </div>
+
+            <div class="story-section">
+
+                <h4 class="subsection-title">What I Learned</h4>
+
+                <ul class="achievement-list">
+
+                    <li>
+                        <span class="bullet-icon">▸</span>
+                        <div class="achievement-content">
+                            Connecting a mobile front-end to multiple backend services (Firebase + custom API)
+                            requires careful handling of data consistency and error states.
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="bullet-icon">▸</span>
+                        <div class="achievement-content">
+                            Designing REST APIs with Flask taught me how to structure clean,
+                            predictable endpoints for cross-team collaboration with AI/ML components.
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="bullet-icon">▸</span>
+                        <div class="achievement-content">
+                            Cross-platform development with Flutter significantly speeds up delivery
+                            without compromising native-like performance.
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Version Switcher -->
+        <div class="version-switcher">
+
+            <button class="version-btn active" onclick="switchVersion(this, 'executive')">
+                <span>Executive</span>
+            </button>
+
+            <button class="version-btn" onclick="switchVersion(this, 'technical')">
+                <span>Technical</span>
+            </button>
+
+            <button class="version-btn" onclick="switchVersion(this, 'storytelling')">
+                <span>Story</span>
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Skills Summary Card -->
+
+<div class="skills-summary-card" data-aos="fade-up" data-aos-delay="200">
+
+    <h4 class="card-title">Mobile App & Backend Integration Capabilities Demonstrated</h4>
+
+    <p class="skills-description">
+        This project demonstrates full-stack mobile development expertise,
+        from building a cross-platform Flutter application to integrating
+        Firebase cloud services and developing a Python/Flask REST API backend.
+        Key strengths include mobile UI development, authentication flows,
+        real-time cloud data management, and bridging mobile apps with
+        external processing systems.
+    </p>
+
+    <div class="skill-categories">
+
+        <div class="skill-category">
+
+            <h5>Mobile Development</h5>
+
+            <div class="skill-pills">
+                <span class="pill">Flutter</span>
+                <span class="pill">Dart</span>
+                <span class="pill">Cross-Platform Apps</span>
+                <span class="pill">UI/UX Implementation</span>
+            </div>
+
+        </div>
+
+        <div class="skill-category">
+
+            <h5>Cloud & Backend</h5>
+
+            <div class="skill-pills">
+                <span class="pill">Firebase Auth</span>
+                <span class="pill">Firestore</span>
+                <span class="pill">Firebase Storage</span>
+                <span class="pill">Flask</span>
+                <span class="pill">REST APIs</span>
+                <span class="pill">Python</span>
+            </div>
+
+        </div>
+
+        <div class="skill-category">
+
+            <h5>System Integration</h5>
+
+            <div class="skill-pills">
+                <span class="pill">App-Backend Bridging</span>
+                <span class="pill">Real-time Data Sync</span>
+                <span class="pill">API Design</span>
+                <span class="pill">Authentication Flows</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+  <div class="container">
+ 
+    <h2 class="section-title">Skills</h2>
+    <p class="skills-subtitle">A snapshot of tools and techniques I work with</p>
+ 
+    <div class="skills-stats">
+      <div class="stat-card">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Domains</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">19</span>
+        <span class="stat-label">Skills</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Curiosity</span>
+      </div>
+    </div>
+ 
+    <div class="skills-categories">
+ 
+      <!-- Technical Skills -->
+      <div class="skill-cat" data-color="blue">
+        <div class="cat-header" onclick="toggleCat(this)">
+          <div class="cat-icon blue-icon">
+            <i class="fa-solid fa-chart-bar"></i>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Technical Skills</h3>
+            <span class="cat-count">7 skills</span>
+          </div>
+          <i class="fa-solid fa-chevron-down cat-chevron"></i>
+        </div>
+        <div class="cat-pills open">
+          <span class="pill blue-pill"><i class="fa-solid fa-broom"></i> Data Cleaning</span>
+          <span class="pill blue-pill"><i class="fa-solid fa-eye"></i> Data Visualization</span>
+          <span class="pill blue-pill"><i class="fa-solid fa-square-root-variable"></i> Statistical Analysis</span>
+          <span class="pill blue-pill"><i class="fa-solid fa-bullseye"></i> KPI Development</span>
+          <span class="pill blue-pill"><i class="fa-solid fa-gauge-high"></i> Power BI</span>
+          <span class="pill blue-pill"><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</span>
+          <span class="pill blue-pill"><i class="fa-solid fa-code"></i> DAX</span>
+        </div>
+      </div>
+ 
+      <!-- Data Analytics & BI -->
+      <div class="skill-cat" data-color="purple">
+        <div class="cat-header" onclick="toggleCat(this)">
+          <div class="cat-icon purple-icon">
+            <i class="fa-solid fa-chart-pie"></i>
+
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Data Analytics &amp; BI</h3>
+            <span class="cat-count">4 skills</span>
+          </div>
+          <i class="fa-solid fa-chevron-down cat-chevron"></i>
+        </div>
+        <div class="cat-pills open">
+          <span class="pill purple-pill"><i class="fa-solid fa-desktop"></i> Interactive Dashboard Development</span>
+          <span class="pill purple-pill"><i class="fa-solid fa-filter"></i> Power Query</span>
+          <span class="pill purple-pill"><i class="fa-solid fa-sliders"></i> What-If Analysis</span>
+          <span class="pill purple-pill"><i class="fa-solid fa-bullhorn"></i> Data Storytelling</span>
+        </div>
+      </div>
+ 
+      <!-- Programming & Development -->
+      <div class="skill-cat" data-color="teal">
+        <div class="cat-header" onclick="toggleCat(this)">
+          <div class="cat-icon teal-icon">
+            <i class="fa-solid fa-terminal"></i>
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-name">Programming &amp; Development</h3>
+            <span class="cat-count">6 skills</span>
+          </div>
+          <i class="fa-solid fa-chevron-down cat-chevron"></i>
+        </div>
+        <div class="cat-pills open">
+          <span class="pill teal-pill"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="pill teal-pill"><i class="fa-solid fa-database"></i> SQL</span>
+          <span class="pill teal-pill"><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+          <span class="pill teal-pill"><i class="fa-solid fa-fire"></i> Firebase</span>
+          <span class="pill teal-pill"><i class="fa-solid fa-server"></i> Flask</span>
+          <span class="pill teal-pill"><i class="fa-solid fa-plug"></i> REST APIs</span>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+    <div class="project-image">
+        <img src="./Images/p1.png" alt="SuperStore Advanced Analytics Platform" />
+    </div>
+
+    <div class="project-content">
+        <div>
+            <div class="project-header">
+                <h3>SuperStore Advanced Analytics Platform</h3>
+                <p>Enterprise Business Intelligence Solution</p>
+            </div>
+
+            <div class="project-body">
+                <p>
+                    Built a complete Power BI analytics ecosystem featuring advanced data modeling,
+                    DAX-driven KPIs, interactive storytelling, and a real-time What-If simulation engine
+                    for strategic decision-making and profitability optimization.
+                </p>
+
+                <div class="project-tech">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">Power Query</span>
+                    <span class="tech-tag">Star Schema</span>
+                    <span class="tech-tag">What-If Analysis</span>
+                    <span class="tech-tag">Data Modeling</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a class="veiw-btn"
+                href="https://github.com/abdelrahmannaggar2005-debug/SuperStore-Analysis.git"
+                target="_blank">
+                <i class="fa-brands fa-github"></i> View Project
+            </a>
+        </div>
+    </div>
+</div>
+
+               <div class="project-card">
+    <div class="project-image">
+        <img src="./Images/p2.png" alt="GaitAI Healthcare Platform" />
+    </div>
+
+    <div class="project-content">
+        <div>
+            <div class="project-header">
+                <h3>GaitAI</h3>
+                <p>AI-Powered Gait Analysis & Healthcare Platform</p>
+            </div>
+
+            <div class="project-body">
+                <p>
+                    Developed the mobile application and backend infrastructure
+                    for an AI-powered gait analysis system. Built Flutter
+                    interfaces, integrated Firebase Authentication & Storage,
+                    and developed Flask APIs to connect the mobile app with
+                    machine learning services and analysis results.
+                </p>
+
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase Auth</span>
+                    <span class="tech-tag">Firebase Storage</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a class="veiw-btn" href="https://github.com/abdelrahmannaggar2005-debug/Gait-AI-.git" target="_blank">
+                <i class="fa-brands fa-github"></i> View Project
+            </a>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+   <section id="contact">
+    <div class="contact-background">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="contact-header">
+            <span class="contact-badge">Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Transform your ideas into reality. I'm available for exciting projects and collaborations.</p>
+        </div>
+        
+        <div class="contact-wrapper">
+            <!-- Contact Info Cards -->
+            <div class="contact-info">
+                <div class="info-header">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <p class="contact-info-subtitle">Choose your preferred way to reach out</p>
+                </div>
+                
+                <div class="info-cards-grid">
+                    <a href="mailto:abdelrahman.naggar2005@gmail.com" class="info-card" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="info-card-inner">
+                            <div class="info-card-content">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div class="icon-ripple"></div>
+                                </div>
+                                <div class="info-text">
+                                    <h4>EMAIL</h4>
+                                    <p>abdelrahman.naggar2005@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="info-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://wa.me/201017314060" target="_blank" class="info-card" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="info-card-inner">
+                            <div class="info-card-content">
+                                <div class="info-icon">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <div class="icon-ripple"></div>
+                                </div>
+                                <div class="info-text">
+                                    <h4>WHATSAPP</h4>
+                                    <p>(+20) 1017314060</p>
+                                </div>
+                            </div>
+                            <div class="info-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+201017314060" class="info-card" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="info-card-inner">
+                            <div class="info-card-content">
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div class="icon-ripple"></div>
+                                </div>
+                                <div class="info-text">
+                                    <h4>PHONE</h4>
+                                    <p>(+20) 1017314060</p>
+                                </div>
+                            </div>
+                            <div class="info-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="availability-card" data-tilt>
+                    <div class="availability-pulse"></div>
+                    <div class="availability-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="availability-content">
+                        <h4>Available for Opportunities</h4>
+                        <p>Open to consulting, full-time positions, and collaborative projects worldwide</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper" data-tilt>
+                <div class="form-glow"></div>
+                <div class="form-header">
+                    <h3>Send a Message</h3>
+                    <p>I'll get back to you within 24 hours</p>
+                </div>
+                
+                <form class="contact-form" action="https://formsubmit.co/abdelrahman.naggar2005@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Contact from Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://abdelrahmannaggar2005-debug.github.io/Portfolio/">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fa-solid fa-user"></i>
+                                Full Name
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                placeholder="Your Name"
+                            >
+                            <div class="input-border"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fa-solid fa-envelope"></i>
+                                Email Address
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                placeholder="your.email@example.com"
+                            >
+                            <div class="input-border"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fa-solid fa-tag"></i>
+                            Subject
+                        </label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            required 
+                            placeholder="Project Inquiry"
+                        >
+                        <div class="input-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fa-solid fa-message"></i>
+                            Message
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required 
+                            placeholder="Tell me about your project, goals, and timeline..."
+                        ></textarea>
+                        <div class="input-border"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-bg"></span>
+                        <span class="btn-content">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <p>Let's work together <i class="fa-solid fa-bolt"></i></p>
+        </div>
+    </footer>
+
+    <div class="scroll-top" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
