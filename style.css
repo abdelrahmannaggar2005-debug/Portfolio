@@ -2478,11 +2478,13 @@ section.visible .highlight-item:nth-child(2) {
 /* Projects Section */
 #projects {
     background: rgba(10, 14, 39, 0.8);
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     max-width: 1400px;
     margin: 0 auto;
@@ -3552,6 +3554,21 @@ footer i {
     box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
 }
 
+@media (max-width: 1100px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+ 
+/* Mobile: single column */
+@media (max-width: 700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 
@@ -3616,9 +3633,7 @@ footer i {
         grid-template-columns: 1fr;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+   
 
     .project-card {
         min-height: auto;
